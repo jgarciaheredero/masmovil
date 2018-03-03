@@ -1,0 +1,40 @@
+.phoneDetail{
+    padding: 0 1em 0 1.6rem;
+    &__boxFirst {
+        display: flex;
+        justify-content: space-between;
+        &__description {
+            font-size: 1.3rem;
+            line-height: 1.3;
+            flex-basis: 60%;
+        }
+        &__vert {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            &__price {
+                font-weight: 500;
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    &__boxSec {
+        margin-top: 1.1rem;
+        &__title {
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+        &__list {
+            display: flex;
+            margin-top: .7rem;
+            &__item {
+                padding-right: 2rem;
+                color: #333;
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

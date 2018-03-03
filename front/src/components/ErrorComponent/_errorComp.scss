@@ -1,0 +1,7 @@
+.error {
+    @extend %positionErrorOrLoading;
+    &__title {
+        @extend %titleErrorOrLoading;
+        margin-bottom: 3rem;
+    }
+}

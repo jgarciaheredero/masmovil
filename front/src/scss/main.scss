@@ -1,0 +1,9 @@
+@import "reset";
+
+@import "layaout";
+@import "utils";
+@import "../components/PhoneListContainer/phoneListContainer";
+@import "../components/PhoneItem/phoneItem";
+@import "../components/PhoneDetailComponent/phoneDetailComponent";
+@import "../components/ErrorComponent/errorComp";
+@import "../components/LoadingComponent/loadingComp";

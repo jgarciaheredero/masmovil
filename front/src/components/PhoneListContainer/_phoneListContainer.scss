@@ -1,0 +1,36 @@
+.container {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.phoneList {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.optionsViewMode {
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .phoneList {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .optionsViewMode {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 1rem;
+        padding: 0 4rem;
+        button {
+            margin-left: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+    }
+}
