@@ -4,8 +4,10 @@ import { AppBar } from 'material-ui';
 import '../scss/main.scss'
 
 class App extends Component {
+  
+  //Render container that includes the application
   render() {
-    const { error, children } = this.props;
+    const { children } = this.props;
     return (
       <div>
         <AppBar 
@@ -13,7 +15,7 @@ class App extends Component {
         />
         { children }
       </div>  
-    );
+    )
   }
 }
 

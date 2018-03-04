@@ -1,11 +1,8 @@
 import React, { Component, PropTypes } from "react";
 import {
   Card,
-  CardActions,
-  CardHeader,
   CardMedia,
-  CardTitle,
-  CardText
+  CardTitle
 } from "material-ui/Card";
 import IconButton from 'material-ui/IconButton';
 import PhoneDetailComponent from '../PhoneDetailComponent';
@@ -18,7 +15,7 @@ class PhoneItem extends Component {
         showDetail: false
     }
   }
-
+  // Show/Hide detail of card
   toggleDetail = () => {
     this.setState({ showDetail: !this.state.showDetail });
   }

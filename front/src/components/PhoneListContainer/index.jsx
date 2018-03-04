@@ -14,7 +14,7 @@ class PhoneListContainer extends Component {
             modeView: true
         }
     }
-
+    //Load data from API
     componentDidMount(){
         this.props.loadData();
     }
@@ -22,7 +22,7 @@ class PhoneListContainer extends Component {
     toggleModelView = () => {
         this.setState({ modeView: !this.state.modeView })
     }
-
+    //render toggle icons options ModeView
     renderButtonsModeView () {
         const styleButtonsModeView = {
             color: '#333',
