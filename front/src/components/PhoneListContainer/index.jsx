@@ -33,9 +33,9 @@ class PhoneListContainer extends Component {
         return (
             <div>
                 {   this.state.modeView === false ? 
-                        <button title="Modo Cómodo" onClick={this.toggleModelView}><ViewComfy style={styleButtonsModeView}/></button>
+                        <button id="changeModeView" title="Modo Cómodo" onClick={this.toggleModelView}><ViewComfy style={styleButtonsModeView}/></button>
                     :
-                        <button title="Modo Compacto" onClick={this.toggleModelView}><ViewCompact style={styleButtonsModeView}/></button>
+                        <button id="changeModeView" title="Modo Compacto" onClick={this.toggleModelView}><ViewCompact style={styleButtonsModeView}/></button>
                 }
             </div>
         );
