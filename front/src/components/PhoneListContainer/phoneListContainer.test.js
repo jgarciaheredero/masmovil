@@ -7,12 +7,15 @@ import { Card } from "material-ui/Card";
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import configureStore from 'redux-mock-store'
 import { Provider } from 'react-redux';
+import { spy } from 'sinon';
 
 Enzyme.configure({ adapter: new Adapter() });
 
+
+
 describe('Correct render', function(){
     const initialState = {phones:[],loading: false, error: false};
-    // const mockStore = configureStore(initialState)
+    const mockStore = configureStore(initialState)
     let item, store = ''
     beforeEach(()=> {
         store = mockStore(initialState);
@@ -24,12 +27,12 @@ describe('Correct render', function(){
                 context: {
                     muiTheme: getMuiTheme(),
                   },
-                  childContextTypes: {
+                childContextTypes: {
                     muiTheme: React.PropTypes.object.isRequired,
-                  }
+                }
             });
     })
-    it('+++ render the connected(SMART) component', () => {
-        expect(item).toEqual(true)
-     });
+    it('One render component', () => {
+        expect(item.length).toEqual(1)
+    });
 })
