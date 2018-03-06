@@ -1,2 +1,0 @@
-# masmovil
-Prueba front masmovil

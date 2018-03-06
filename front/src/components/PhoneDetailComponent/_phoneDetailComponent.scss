@@ -1,18 +1,32 @@
 .phoneDetail{
     padding: 0 1em 0 1.6rem;
     &__boxFirst {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         &__description {
             font-size: 1.3rem;
             line-height: 1.3;
-            flex-basis: 60%;
+            -ms-flex-preferred-size: 60%;
+                flex-basis: 60%;
         }
         &__vert {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
             &__price {
                 font-weight: 500;
                 font-size: 2rem;
@@ -27,6 +41,8 @@
             font-size: 1.3rem;
         }
         &__list {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             margin-top: .7rem;
             &__item {

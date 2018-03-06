@@ -1,12 +1,19 @@
 .phoneItem {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin: 1em;
     &__card {
         padding: 2rem 1rem;
         &__boxTitle {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
         }
     }
     &:hover {
@@ -16,20 +23,25 @@
 
 @media (min-width: 480px) {
     .phoneItem {
-        flex-basis: 45%;
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
     }
 }
 
 @media (min-width: 992px) {
     .phoneItem {
-        flex-basis: 23%;
+        -ms-flex-preferred-size: 23%;
+            flex-basis: 23%;
+        -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         margin: 1.5rem;
         &:hover {
-            transform: scale(1.03);
+            -webkit-transform: scale(1.03);
+                    transform: scale(1.03);
         }
     }
     .phoneItem.compact {
-        flex-basis: 32%;
+        -ms-flex-preferred-size: 32%;
+            flex-basis: 32%;
     }
 }
