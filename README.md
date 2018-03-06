@@ -2,11 +2,11 @@
  Juan Manuel Ros
  ## Docker
  He dockerizado la aplicación como se pedia en el 'bonus point'. Para levantar la app introducir el comando `docker-compose up`
- Si se quiere levantar la app a mano:
+ Si no se tiene instalado docker y se quiere levantar la app a mano:
  
 
- - carpeta back: introducir el comando `npm start`
- - carpeta front: introducir el comando `npm run dev` 
+ - carpeta back: introducir el comando  `npm install` para instalar las dependencias y  `npm start` para levantar la aplicación
+ - carpeta front: introducir el comando `npm install` para instalar las dependencias y `npm run dev` para levantar la aplicación
 
 ### Api
 La api la he realizado con node.js y express con datos mockeados servidos en el endpoint `/phones`.
