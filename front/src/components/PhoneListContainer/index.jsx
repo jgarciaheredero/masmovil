@@ -70,6 +70,13 @@ class PhoneListContainer extends Component {
     }
 }
 
+PhoneListContainer.PropTypes = {
+    loadData:   PropTypes.func,
+    phones:     PropTypes.array,
+    loading:    PropTypes.bool,
+    error:      PropTypes.bool
+}
+
 const mapDispatchToProps = {
     loadData
 }
